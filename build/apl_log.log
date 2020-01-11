@@ -1,0 +1,6 @@
+DEBUG:2020/01/05 16:49:49.202106 aplLogger.go:66: [start fuditor]
+DEBUG:2020/01/05 16:49:49.332744 aplLogger.go:66: [init termbox]
+DEBUG:2020/01/05 16:49:49.332744 aplLogger.go:66: [start keepGOing]
+DEBUG:2020/01/05 16:50:09.503645 aplLogger.go:66: [break loop key 17]
+DEBUG:2020/01/05 16:50:09.507635 aplLogger.go:66: [end keepGOing]
+DEBUG:2020/01/05 16:50:09.533630 aplLogger.go:66: [end fuditor]
