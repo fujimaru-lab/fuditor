@@ -23,20 +23,20 @@ func IsFile(_filepath string) bool {
 
 // ConfirmInput 開発時の入力確認用
 func ConfirmInput(_key termbox.Event) {
-	max_x, max_y := termbox.Size()
-	for i := 0; i < max_x; i++ {
-		termbox.SetCell(i, max_y-3, '-', termbox.ColorWhite, termbox.ColorBlack)
+	maxX, maxY := termbox.Size()
+	for i := 0; i < maxX; i++ {
+		termbox.SetCell(i, maxY-3, '-', termbox.ColorWhite, termbox.ColorBlack)
 	}
 	message := fmt.Sprint("INPUT KEY:Key=", _key.Key, ", Ch=", string(_key.Ch))
 	data := []rune(message)
-	for i := 0; i < max_x; i++ {
+	for i := 0; i < maxX; i++ {
 		if i < len(data) {
-			termbox.SetCell(5+i, max_y-2, data[i], termbox.ColorWhite, termbox.ColorBlack)
+			termbox.SetCell(5+i, maxY-2, data[i], termbox.ColorWhite, termbox.ColorBlack)
 		} else {
-			termbox.SetCell(5+i, max_y-2, ' ', termbox.ColorWhite, termbox.ColorBlack)
+			termbox.SetCell(5+i, maxY-2, ' ', termbox.ColorWhite, termbox.ColorBlack)
 		}
 	}
-	for i := 0; i < max_x; i++ {
-		termbox.SetCell(i, max_y-1, '-', termbox.ColorWhite, termbox.ColorBlack)
+	for i := 0; i < maxX; i++ {
+		termbox.SetCell(i, maxY-1, '-', termbox.ColorWhite, termbox.ColorBlack)
 	}
 }
